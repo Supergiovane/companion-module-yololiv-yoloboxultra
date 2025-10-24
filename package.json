@@ -1,12 +1,12 @@
 {
   "name": "yololiv-ultra",
-  "version": "0.1.12-beta.0",
+  "version": "0.1.12-beta.1",
   "description": "Bitfocus Companion module for controlling a YoloLiv YoloBox Ultra via its Web Control websocket API.",
   "main": "main.js",
   "scripts": {
     "format": "prettier -w .",
-    "package": "companion-module-build",
-    "package:beta": "companion-module-build --prerelease",
+    "package": "companion-module-build && node scripts/post-build.js",
+    "package:beta": "companion-module-build --prerelease && node scripts/post-build.js",
     "bump": "node scripts/bump-version.js",
     "release": "npm run bump -- patch && npm run package",
     "release:beta": "npm run bump -- beta && npm run package:beta"
@@ -15,11 +15,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/supergiovane/companion-to-yolobox.git"
+    "url": "https://github.com/Supergiovane/companion-to-yolobox.git"
   },
-  "homepage": "https://github.com/supergiovane/companion-to-yolobox#readme",
+  "homepage": "https://github.com/Supergiovane/companion-to-yolobox#readme",
   "bugs": {
-    "url": "https://github.com/supergiovane/companion-to-yolobox/issues"
+    "url": "https://github.com/Supergiovane/companion-to-yolobox/issues"
   },
   "keywords": [
     "companion-module",

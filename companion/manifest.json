@@ -4,10 +4,10 @@
   "name": "YoloBox Ultra",
   "shortname": "yolobox-ultra",
   "description": "Control a YoloLiv YoloBox Ultra via its Web Control websocket API.",
-  "version": "0.1.12-beta.0",
+  "version": "0.1.12-beta.1",
   "license": "MIT",
-  "repository": "https://github.com/supergiovane/companion-to-yolobox",
-  "bugs": "https://github.com/supergiovane/companion-to-yolobox/issues",
+  "repository": "https://github.com/Supergiovane/companion-to-yolobox",
+  "bugs": "https://github.com/Supergiovane/companion-to-yolobox/issues",
   "maintainers": [
     {
       "name": "Massimo Saccani",
