@@ -42,13 +42,5 @@ See [`companion/HELP.md`](companion/HELP.md) for usage tips and detailed action/
 - The module does not download preview thumbnails returned by the API; custom integrations can consume the provided URLs if needed.
 - The public API does not expose the local recording state, so no dedicated feedback/action is available for that feature.
 
-## Publishing on the Companion Module Store
-
-Before submitting the module to Bitfocus for inclusion in the official store:
-
-1. Update `companion/manifest.json` with your maintainer email, confirm the repository URL and bump the `version` field in lockstep with `package.json`.
-2. Run `npm run package` to produce a clean build and verify there are no errors.
-3. Tag a release on GitHub and attach the generated artifacts (or provide build instructions) as described in the Bitfocus contribution guide.
-4. Open a pull request against the [`bitfocus/companion-module-store`](https://github.com/bitfocus/companion-module-store) repository referencing your release so the Companion team can review and publish it.
 
 Contributions, bug reports and feature requests are welcome via issues or pull requests.
