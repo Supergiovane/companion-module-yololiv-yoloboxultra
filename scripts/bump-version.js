@@ -8,7 +8,7 @@ const mode = process.argv[2]
 const identifier = process.argv[3] || 'beta'
 
 if (!mode) {
-	console.error('Usage: npm run bump -- <major|minor|patch|beta|<version>> [identifier]')
+	console.error('Usage: yarn bump -- <major|minor|patch|beta|<version>> [identifier]')
 	process.exit(1)
 }
 

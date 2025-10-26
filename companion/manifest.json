@@ -1,13 +1,13 @@
 {
   "$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
-  "id": "yololiv-ultra",
+  "id": "yololiv-yoloboxultra",
   "name": "YoloBox Ultra",
-  "shortname": "yolobox-ultra",
+  "shortname": "yololiv-yoloboxultra",
   "description": "Control a YoloLiv YoloBox Ultra via its Web Control websocket API.",
   "version": "0.1.12-beta.1",
   "license": "MIT",
-  "repository": "https://github.com/Supergiovane/companion-to-yolobox",
-  "bugs": "https://github.com/Supergiovane/companion-to-yolobox/issues",
+  "repository": "https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra",
+  "bugs": "https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra/issues",
   "maintainers": [
     {
       "name": "Massimo Saccani",
@@ -16,7 +16,7 @@
   ],
   "legacyIds": [],
   "runtime": {
-    "type": "node18",
+    "type": "node22",
     "api": "nodejs-ipc",
     "apiVersion": "0.0.0",
     "entrypoint": "../main.js"

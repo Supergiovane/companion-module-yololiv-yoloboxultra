@@ -19,8 +19,8 @@ Companion module for controlling a YoloLiv YoloBox Ultra via the same WebSocket 
 ## Installation
 
 1. Clone this repository into your Companion custom-modules directory.
-2. Run `npm install` (or `yarn install` if you have Yarn enabled through Corepack) to fetch dependencies.
-3. Launch Companion (either from source or the desktop build); it will pick up modules from the `custom-modules` folder automatically. When you want to test or distribute an installable archive, execute `npm run package`—this produces a `yololiv-ultra-<version>.tgz` file in the project root.
+2. Enable Yarn -> `corepack enable` (if not already) and run `yarn install` to fetch dependencies.
+3. Launch Companion (either from source or the desktop build); it will pick up modules from the `custom-modules` folder automatically. When you want to test or distribute an installable archive, execute `yarn package`—this drops a `companion-module-yololiv-yoloboxultra-<version>.tgz` file inside the `dist/` folder.
 
 To load the packaged module into Companion without the store:
 

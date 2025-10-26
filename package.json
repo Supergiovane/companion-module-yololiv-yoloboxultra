@@ -1,5 +1,5 @@
 {
-  "name": "yololiv-ultra",
+  "name": "companion-module-yololiv-yoloboxultra",
   "version": "0.1.12-beta.1",
   "description": "Bitfocus Companion module for controlling a YoloLiv YoloBox Ultra via its Web Control websocket API.",
   "main": "main.js",
@@ -8,18 +8,18 @@
     "package": "companion-module-build && node scripts/post-build.js",
     "package:beta": "companion-module-build --prerelease && node scripts/post-build.js",
     "bump": "node scripts/bump-version.js",
-    "release": "npm run bump -- patch && npm run package",
-    "release:beta": "npm run bump -- beta && npm run package:beta"
+    "release": "yarn run bump -- patch && yarn run package",
+    "release:beta": "yarn run bump -- beta && yarn run package:beta"
   },
   "author": "Massimo Saccani",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Supergiovane/companion-to-yolobox.git"
+    "url": "git+https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra.git"
   },
-  "homepage": "https://github.com/Supergiovane/companion-to-yolobox#readme",
+  "homepage": "https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra#readme",
   "bugs": {
-    "url": "https://github.com/Supergiovane/companion-to-yolobox/issues"
+    "url": "https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra/issues"
   },
   "keywords": [
     "companion-module",
@@ -34,9 +34,9 @@
   },
   "devDependencies": {
     "@companion-module/tools": "^2.4.2",
-    "prettier": "^3.3.3",
+    "prettier": "^3.5.3",
     "semver": "^7.6.3"
   },
   "prettier": "@companion-module/tools/.prettierrc.json",
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.9.1"
 }
