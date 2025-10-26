@@ -7,11 +7,9 @@ const root = path.resolve(__dirname, '..')
 const pkg = require(path.join(root, 'package.json'))
 const manifest = require(path.join(root, 'companion/manifest.json'))
 
-const baseCandidates = [
-	pkg.name,
-	manifest?.id,
-	manifest?.shortname,
-].filter((value, index, arr) => value && arr.indexOf(value) === index)
+const baseCandidates = [pkg.name, manifest?.id, manifest?.shortname].filter(
+	(value, index, arr) => value && arr.indexOf(value) === index,
+)
 
 let sourceFilename = null
 for (const base of baseCandidates) {

@@ -1,6 +1,6 @@
 # Bitfocus Companion – YoloBox Ultra Module
 
-Companion module for controlling a YoloLiv YoloBox Ultra via the same WebSocket API that powers the official *Web Control* interface. Automate scenes, overlays, audio and live-state workflows through Companion buttons, macros and stream decks.
+Companion module for controlling a YoloLiv YoloBox Ultra via the same WebSocket API that powers the official _Web Control_ interface. Automate scenes, overlays, audio and live-state workflows through Companion buttons, macros and stream decks.
 
 ## Key Features
 
@@ -24,14 +24,14 @@ Companion module for controlling a YoloLiv YoloBox Ultra via the same WebSocket 
 
 To load the packaged module into Companion without the store:
 
-- Open *Modules → Import module package* (the first button) and pick the generated `.tgz` archive.
-- Wait for the confirmation toast; the module will appear under *Connections* ready to configure.
+- Open _Modules → Import module package_ (the first button) and pick the generated `.tgz` archive.
+- Wait for the confirmation toast; the module will appear under _Connections_ ready to configure.
 
-> ⚠️ The *Import offline module bundle* button is meant for the official multi-module bundle Bitfocus publishes for fully offline installs. Using it with the single-module `.tgz` from this repo will result in “No modules found in bundle.”
+> ⚠️ The _Import offline module bundle_ button is meant for the official multi-module bundle Bitfocus publishes for fully offline installs. Using it with the single-module `.tgz` from this repo will result in “No modules found in bundle.”
 
 ## Configuration in Companion
 
-1. Add a new `YoloBox Ultra` instance from the *Instances* section.
+1. Add a new `YoloBox Ultra` instance from the _Instances_ section.
 2. Enter the device IP address and, if required, adjust the port and polling interval.
 3. Once connected, actions will list the current scenes, overlays and audio channels reported by the device.
 
@@ -41,6 +41,5 @@ See [`companion/HELP.md`](companion/HELP.md) for usage tips and detailed action/
 
 - The module does not download preview thumbnails returned by the API; custom integrations can consume the provided URLs if needed.
 - The public API does not expose the local recording state, so no dedicated feedback/action is available for that feature.
-
 
 Contributions, bug reports and feature requests are welcome via issues or pull requests.
