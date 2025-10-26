@@ -1,6 +1,6 @@
 {
   "name": "companion-module-yololiv-yoloboxultra",
-  "version": "0.1.12-beta.4",
+  "version": "0.1.12-beta.5",
   "description": "Bitfocus Companion module for controlling a YoloLiv YoloBox Ultra via its Web Control websocket API.",
   "main": "main.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "streaming"
   ],
   "dependencies": {
-    "@companion-module/base": "~1.13.4",
+    "@companion-module/base": "~1.12.1",
     "ajv": "^8.17.1",
     "ws": "^8.18.0"
   },
