@@ -1,6 +1,6 @@
 {
   "name": "companion-module-yololiv-yoloboxultra",
-  "version": "0.1.12-beta.2",
+  "version": "0.1.12-beta.3",
   "description": "Bitfocus Companion module for controlling a YoloLiv YoloBox Ultra via its Web Control websocket API.",
   "main": "main.js",
   "scripts": {

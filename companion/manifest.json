@@ -1,27 +1,34 @@
 {
-	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
-	"id": "yololiv-yoloboxultra",
-	"name": "YoloBox Ultra",
-	"shortname": "yololiv-yoloboxultra",
-	"description": "Control a YoloLiv YoloBox Ultra via its Web Control websocket API.",
-	"version": "0.1.12-beta.2",
-	"license": "MIT",
-	"repository": "https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra",
-	"bugs": "https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra/issues",
-	"maintainers": [
-		{
-			"name": "Massimo Saccani",
-			"email": "maxsupergiovane@icloud.com"
-		}
-	],
-	"legacyIds": [],
-	"runtime": {
-		"type": "node22",
-		"api": "nodejs-ipc",
-		"apiVersion": "0.0.0",
-		"entrypoint": "../main.js"
-	},
-	"manufacturer": "YoloLiv",
-	"products": ["YoloBox Ultra"],
-	"keywords": ["streaming", "switcher", "yolobox", "yololiv"]
+  "$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+  "id": "yololiv-yoloboxultra",
+  "name": "YoloBox Ultra",
+  "shortname": "yololiv-yoloboxultra",
+  "description": "Control a YoloLiv YoloBox Ultra via its Web Control websocket API.",
+  "version": "0.1.12-beta.3",
+  "license": "MIT",
+  "repository": "https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra",
+  "bugs": "https://github.com/Supergiovane/companion-module-yololiv-yoloboxultra/issues",
+  "maintainers": [
+    {
+      "name": "Massimo Saccani",
+      "email": "maxsupergiovane@icloud.com"
+    }
+  ],
+  "legacyIds": [],
+  "runtime": {
+    "type": "node22",
+    "api": "nodejs-ipc",
+    "apiVersion": "0.0.0",
+    "entrypoint": "../main.js"
+  },
+  "manufacturer": "YoloLiv",
+  "products": [
+    "YoloBox Ultra"
+  ],
+  "keywords": [
+    "streaming",
+    "switcher",
+    "yolobox",
+    "yololiv"
+  ]
 }
