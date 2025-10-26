@@ -14,20 +14,21 @@ Companion module for controlling a YoloLiv YoloBox Ultra via the same WebSocket 
 - Bitfocus Companion v3 or later.
 - YoloBox Ultra firmware with Web Control enabled, reachable on the same network as Companion.
 - Port `8887` open between Companion and the YoloBox (default Web Control port).
-- Node.js 18.12+ or 22.8+ when building the module locally (in line with the requirements of `@companion-module/base`).
+
 
 ## Installation
 
-1. Clone this repository into your Companion custom-modules directory.
-2. Enable Yarn -> `corepack enable` (if not already) and run `yarn install` to fetch dependencies.
-3. Launch Companion (either from source or the desktop build); it will pick up modules from the `custom-modules` folder automatically. When you want to test or distribute an installable archive, execute `yarn package`—this drops a `companion-module-yololiv-yoloboxultra-<version>.tgz` file inside the `dist/` folder.
+### From the Companion Module Store (simpler way)
 
-To load the packaged module into Companion without the store:
+1. Open _Modules → Module Store_ (or _Modules → Manage modules_) inside Companion.
+2. Search for **YoloBox Ultra** or **yololiv** and click _Install_. Companion fetches the latest compatible build directly from the Bitfocus registry.
+3. Go to _Connections → Add connection_, pick `YoloBox Ultra`, choose the version shown in the dropdown, and fill in the device IP/ports.
 
-- Open _Modules → Import module package_ (the first button) and pick the generated `.tgz` archive.
-- Wait for the confirmation toast; the module will appear under _Connections_ ready to configure.
+### From this repository (local/dev builds)
 
-> ⚠️ The _Import offline module bundle_ button is meant for the official multi-module bundle Bitfocus publishes for fully offline installs. Using it with the single-module `.tgz` from this repo will result in “No modules found in bundle.”
+Prefer a ready-made archive without rebuilding? Grab the freshest `.tgz` files under [`dist/`](dist/) (we keep the latest stable and beta drops there), then import the one you need via _Modules → Import module package_. Once Companion shows the success toast, that version is immediately available in the Add Connection dialog.
+
+> ⚠️ The _Import offline module bundle_ button is for the official multi-module bundle Bitfocus publishes for fully offline installs. Using it with this single-module `.tgz` results in “No modules found in bundle.”
 
 ## Configuration in Companion
 
