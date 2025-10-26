@@ -1,12 +1,12 @@
 {
   "name": "companion-module-yololiv-yoloboxultra",
-  "version": "0.1.12-beta.6",
+  "version": "0.1.12-beta.10",
   "description": "Bitfocus Companion module for controlling a YoloLiv YoloBox Ultra via its Web Control websocket API.",
   "main": "main.js",
   "scripts": {
     "format": "prettier -w .",
     "package": "companion-module-build && node scripts/post-build.js",
-    "package:beta": "companion-module-build --prerelease && node scripts/post-build.js",
+    "package:beta": "yarn run package",
     "bump": "node scripts/bump-version.js",
     "release": "yarn run bump patch && yarn run package",
     "release:beta": "yarn run bump beta && yarn run package:beta"
@@ -28,12 +28,13 @@
     "streaming"
   ],
   "dependencies": {
-    "@companion-module/base": "~1.12.1",
+    "@companion-module/base": "1.12.0",
     "ajv": "^8.17.1",
     "ws": "^8.18.0"
   },
   "devDependencies": {
     "@companion-module/tools": "^2.4.2",
+    "eslint": "^9.36.0",
     "prettier": "^3.5.3",
     "semver": "^7.6.3"
   },
